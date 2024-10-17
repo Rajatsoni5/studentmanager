@@ -1,7 +1,10 @@
-import React, {useState} from 'react'
+import React from 'react'
+import { useCart } from '../context/provideContext';
 
 function StudentCounter() {
-    const count = 0;
+
+    const {count} = useCart();
+    
   return (
     <div>
         <p>All Students : {count}</p>
